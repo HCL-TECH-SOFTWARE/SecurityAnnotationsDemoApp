@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project default_configuration_name="Configuration 1" fallback_default_config_name="Configuration 1" file_encoding="UTF-8" file_extension_set_name="java" jsp_compiler_info_name="Tomcat 7" jsp_compiler_type="7" ltd_name="java" name="SecurityAnnotationsDemoProject" version="9.0.3.1" web_context_root_path=".\src\main\webapp">
+	<Configuration class_path="..\MyLibrary.jar;..\SecurityAnnotations.jar;src\main\webapp\WEB-INF\lib\commons-beanutils-1.7.0.jar;src\main\webapp\WEB-INF\lib\commons-cli-1.0.jar;src\main\webapp\WEB-INF\lib\commons-collections-3.1.jar;src\main\webapp\WEB-INF\lib\commons-io-2.1.jar;src\main\webapp\WEB-INF\lib\commons-lang-2.1.jar;src\main\webapp\WEB-INF\lib\commons-logging-1.0.4.jar;src\main\webapp\WEB-INF\lib\derby.jar;src\main\webapp\WEB-INF\lib\ecj-3.7.jar;src\main\webapp\WEB-INF\lib\hibernate-commons-annotations-4.0.1.Final.jar;src\main\webapp\WEB-INF\lib\hibernate-core-4.0.1.Final.jar;src\main\webapp\WEB-INF\lib\hibernate-jpa-2.0-api-1.0.1.Final.jar;src\main\webapp\WEB-INF\lib\hibernate-validator-4.2.0.Final.jar;src\main\webapp\WEB-INF\lib\j2ee.jar;src\main\webapp\WEB-INF\lib\jasper-6.0.13.jar;src\main\webapp\WEB-INF\lib\javaee-api-6.0.jar;src\main\webapp\WEB-INF\lib\javax.servlet-3.0.jar;src\main\webapp\WEB-INF\lib\jsp-api-2.2.jar;src\main\webapp\WEB-INF\lib\junit-4.8.2.jar;src\main\webapp\WEB-INF\lib\log4j-1.2.13.jar;src\main\webapp\WEB-INF\lib\spring-beans-3.1.0.RELEASE.jar;src\main\webapp\WEB-INF\lib\spring-core-3.1.0.RELEASE.jar;src\main\webapp\WEB-INF\lib\spring-jdbc-3.1.0.RELEASE.jar;src\main\webapp\WEB-INF\lib\spring-web-3.1.0.RELEASE.jar;src\main\webapp\WEB-INF\lib\spring-webmvc-2.5.6.jar;src\main\webapp\WEB-INF\lib\spring-webmvc-3.1.0.RELEASE.jar;src\main\webapp\WEB-INF\lib\springframework-5.1.0-M1.jar;src\main\webapp\WEB-INF\lib\validation-api-1.0.0.GA.jar" jdk_name="IBM JDK 1.8" name="Configuration 1"/>
+	<Source exclude="false" path=".\src\main\java" web="false"/>
+	<Source exclude="false" path=".\src\main\webapp" web="true"/>
+	<Properties>
+		<Property name="clean" value="true"/>
+		<Property name="source_staging" value="true"/>
+		<Property name="correct_packages" value="true"/>
+	</Properties>
+	<ProjectScanSettings cache_va="false" global_rules="false" string_analysis="false"/>
+</Project>

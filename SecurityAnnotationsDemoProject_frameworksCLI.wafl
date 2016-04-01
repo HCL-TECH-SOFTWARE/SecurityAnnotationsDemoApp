@@ -1,0 +1,303 @@
+<wafl xmlns="http://www.ibm.com/WAFLSchema">
+  <global-bean-decls>
+    <object-decl id="request.customer" type="com.ibm.appscan.annotations.model.Customer" lifespan="entrypoint">
+    </object-decl>
+    <object-decl id="request.person" type="java.lang.Object" lifespan="entrypoint">
+    </object-decl>
+    <object-decl id="session.customer" type="com.ibm.appscan.annotations.model.Customer" lifespan="global">
+    </object-decl>
+    <object-decl id="session.person" type="java.lang.Object" lifespan="global">
+    </object-decl>
+  </global-bean-decls>
+  <synthetic-methods>
+    <synthetic-method sig="AppScan.Synthetic.Spring3.LoginMethod_1__entry(javax.servlet.http.HttpServletRequest;javax.servlet.http.HttpServletResponse):void">
+      <local-decl id="local0" type="java.lang.String">
+      </local-decl>
+      <body>
+        <assignment filename="Controller1.java" lineNumber="22" columnNumber="0">
+          <l-value>
+            <object-ref ap="">
+              <local id="local0"/>
+            </object-ref>
+          </l-value>
+          <r-value>
+            <call signature="com.ibm.appscan.annotations.controller.Controller1.LoginMethod_1(java.lang.String;java.lang.String):java.lang.String" filename="Controller1.java" lineNumber="22" columnNumber="0">
+              <actual-parameter pos="1">
+                <taint type="parameter" name="username"/>
+              </actual-parameter>
+              <actual-parameter pos="2">
+                <taint type="parameter" name="password"/>
+              </actual-parameter>
+            </call>
+          </r-value>
+        </assignment>
+        <call signature="SecurityAnnotationsDemoProject.WEB_002dINF.pages.Done_jsp._jspService(javax.servlet.http.HttpServletRequest;javax.servlet.http.HttpServletResponse):void" filename="Controller1.java" lineNumber="22" columnNumber="0">
+          <actual-parameter pos="0">
+            <object-ref ap="">
+              <formal pos="0"/>
+            </object-ref>
+          </actual-parameter>
+          <actual-parameter pos="1">
+            <object-ref ap="">
+              <formal pos="1"/>
+            </object-ref>
+          </actual-parameter>
+        </call>
+      </body>
+    </synthetic-method>
+    <synthetic-method sig="AppScan.Synthetic.Spring3.LoginMethod_2__entry(javax.servlet.http.HttpServletRequest;javax.servlet.http.HttpServletResponse):void">
+      <local-decl id="local0" type="java.lang.String">
+      </local-decl>
+      <body>
+        <assignment filename="Controller3.java" lineNumber="20" columnNumber="0">
+          <l-value>
+            <object-ref ap="">
+              <local id="local0"/>
+            </object-ref>
+          </l-value>
+          <r-value>
+            <call signature="com.ibm.appscan.annotations.controller.Controller3.LoginMethod_2(java.lang.String;java.lang.String):java.lang.String" filename="Controller3.java" lineNumber="20" columnNumber="0">
+              <actual-parameter pos="1">
+                <taint type="parameter" name="username"/>
+              </actual-parameter>
+              <actual-parameter pos="2">
+                <taint type="parameter" name="password"/>
+              </actual-parameter>
+            </call>
+          </r-value>
+        </assignment>
+        <call signature="SecurityAnnotationsDemoProject.WEB_002dINF.pages.Done_jsp._jspService(javax.servlet.http.HttpServletRequest;javax.servlet.http.HttpServletResponse):void" filename="Controller3.java" lineNumber="20" columnNumber="0">
+          <actual-parameter pos="0">
+            <object-ref ap="">
+              <formal pos="0"/>
+            </object-ref>
+          </actual-parameter>
+          <actual-parameter pos="1">
+            <object-ref ap="">
+              <formal pos="1"/>
+            </object-ref>
+          </actual-parameter>
+        </call>
+      </body>
+    </synthetic-method>
+    <synthetic-method sig="AppScan.Synthetic.Spring3.NotAnInterestingMethod__entry(javax.servlet.http.HttpServletRequest;javax.servlet.http.HttpServletResponse):void">
+      <local-decl id="local0" type="int">
+      </local-decl>
+      <local-decl id="local1" type="java.lang.Boolean">
+      </local-decl>
+      <local-decl id="local2" type="org.springframework.ui.ModelMap">
+      </local-decl>
+      <local-decl id="local3" type="java.lang.String">
+      </local-decl>
+      <body>
+        <assignment filename="SuppressSecurityDemoClass.java" lineNumber="26" columnNumber="0">
+          <l-value>
+            <object-ref ap="">
+              <local id="local0"/>
+            </object-ref>
+          </l-value>
+          <r-value>
+            <call signature="java.lang.Integer.parseInt(java.lang.String):int" filename="SuppressSecurityDemoClass.java" lineNumber="26" columnNumber="0">
+              <actual-parameter pos="0">
+                <taint type="parameter" name="someint"/>
+              </actual-parameter>
+            </call>
+          </r-value>
+        </assignment>
+        <assignment filename="SuppressSecurityDemoClass.java" lineNumber="26" columnNumber="0">
+          <l-value>
+            <object-ref ap="">
+              <local id="local1"/>
+            </object-ref>
+          </l-value>
+          <r-value>
+            <call signature="java.lang.Boolean.valueOf(java.lang.String):java.lang.Boolean" filename="SuppressSecurityDemoClass.java" lineNumber="26" columnNumber="0">
+              <actual-parameter pos="0">
+                <taint type="parameter" name="somebool"/>
+              </actual-parameter>
+            </call>
+          </r-value>
+        </assignment>
+        <assignment filename="SuppressSecurityDemoClass.java" lineNumber="26" columnNumber="0">
+          <l-value>
+            <object-ref ap="">
+              <local id="local3"/>
+            </object-ref>
+          </l-value>
+          <r-value>
+            <call signature="com.ibm.appscan.annotations.controller.SuppressSecurityDemoClass.NotAnInterestingMethod(int;java.lang.String;java.lang.Boolean;org.springframework.ui.ModelMap):java.lang.String" filename="SuppressSecurityDemoClass.java" lineNumber="26" columnNumber="0">
+              <actual-parameter pos="1">
+                <object-ref ap="">
+                  <local id="local0"/>
+                </object-ref>
+              </actual-parameter>
+              <actual-parameter pos="2">
+                <taint type="parameter" name="stringOne"/>
+              </actual-parameter>
+              <actual-parameter pos="3">
+                <object-ref ap="">
+                  <local id="local1"/>
+                </object-ref>
+              </actual-parameter>
+              <actual-parameter pos="4">
+                <object-ref ap="">
+                  <local id="local2"/>
+                </object-ref>
+              </actual-parameter>
+            </call>
+          </r-value>
+        </assignment>
+        <call signature="SecurityAnnotationsDemoProject.WEB_002dINF.pages.Done_jsp._jspService(javax.servlet.http.HttpServletRequest;javax.servlet.http.HttpServletResponse):void" filename="SuppressSecurityDemoClass.java" lineNumber="26" columnNumber="0">
+          <actual-parameter pos="0">
+            <object-ref ap="">
+              <formal pos="0"/>
+            </object-ref>
+          </actual-parameter>
+          <actual-parameter pos="1">
+            <object-ref ap="">
+              <formal pos="1"/>
+            </object-ref>
+          </actual-parameter>
+        </call>
+      </body>
+    </synthetic-method>
+    <synthetic-method sig="AppScan.Synthetic.Spring3.doGet__entry(javax.servlet.http.HttpServletRequest;javax.servlet.http.HttpServletResponse):void">
+      <local-decl id="local0" type="javax.servlet.http.HttpServletResponse">
+      </local-decl>
+      <body>
+        <call signature="com.ibm.appscan.annotations.controller.SuppressSecurityDemoClass.doGet(java.lang.String;javax.servlet.http.HttpServletResponse):void" filename="SuppressSecurityDemoClass.java" lineNumber="35" columnNumber="0">
+          <actual-parameter pos="1">
+            <taint type="parameter" name="loginData"/>
+          </actual-parameter>
+          <actual-parameter pos="2">
+            <object-ref ap="">
+              <local id="local0"/>
+            </object-ref>
+          </actual-parameter>
+        </call>
+      </body>
+    </synthetic-method>
+  </synthetic-methods>
+  <entrypoints>
+    <entrypoint sig="AppScan.Synthetic.Spring3.LoginMethod_1__entry(javax.servlet.http.HttpServletRequest;javax.servlet.http.HttpServletResponse):void">
+      <url>//customer</url>
+    </entrypoint>
+    <entrypoint sig="AppScan.Synthetic.Spring3.LoginMethod_2__entry(javax.servlet.http.HttpServletRequest;javax.servlet.http.HttpServletResponse):void">
+      <url>//customer</url>
+    </entrypoint>
+    <entrypoint sig="AppScan.Synthetic.Spring3.NotAnInterestingMethod__entry(javax.servlet.http.HttpServletRequest;javax.servlet.http.HttpServletResponse):void">
+      <url>//dump</url>
+    </entrypoint>
+    <entrypoint sig="AppScan.Synthetic.Spring3.doGet__entry(javax.servlet.http.HttpServletRequest;javax.servlet.http.HttpServletResponse):void">
+      <url>//dump/something</url>
+    </entrypoint>
+  </entrypoints>
+  <call-replacements>
+    <replace-call>
+      <call-site-info caller="SecurityAnnotationsDemoProject.WEB_002dINF.pages.CustomerForm_jsp._jspService(javax.servlet.http.HttpServletRequest;javax.servlet.http.HttpServletResponse):void" call-sig="org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(java.lang.String;java.lang.Class;javax.servlet.jsp.PageContext;org.apache.jasper.runtime.ProtectedFunctionMapper;boolean):java.lang.Object" bytecodeIndex="804" srcLineNum="169"/>
+      <replacement>
+        <assignment>
+          <l-value>
+            <arg-to-orig-call pos="-1"/>
+          </l-value>
+          <r-value>
+            <call signature="com.ibm.appscan.annotations.model.Customer.getName():java.lang.String">
+              <actual-parameter pos="0">
+                <object-ref ap="">
+                  <non-det>
+                    <global id="request.customer"/>
+                    <global id="session.customer"/>
+                  </non-det>
+                </object-ref>
+              </actual-parameter>
+            </call>
+          </r-value>
+        </assignment>
+      </replacement>
+    </replace-call>
+    <replace-call>
+      <call-site-info caller="SecurityAnnotationsDemoProject.WEB_002dINF.pages.CustomerForm_jsp._jspService(javax.servlet.http.HttpServletRequest;javax.servlet.http.HttpServletResponse):void" call-sig="org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(java.lang.String;java.lang.Class;javax.servlet.jsp.PageContext;org.apache.jasper.runtime.ProtectedFunctionMapper;boolean):java.lang.Object" bytecodeIndex="830" srcLineNum="171"/>
+      <replacement>
+        <assignment>
+          <l-value>
+            <arg-to-orig-call pos="-1"/>
+          </l-value>
+          <r-value>
+            <call signature="com.ibm.appscan.annotations.model.Customer.getAge():int">
+              <actual-parameter pos="0">
+                <object-ref ap="">
+                  <non-det>
+                    <global id="request.customer"/>
+                    <global id="session.customer"/>
+                  </non-det>
+                </object-ref>
+              </actual-parameter>
+            </call>
+          </r-value>
+        </assignment>
+      </replacement>
+    </replace-call>
+    <replace-call>
+      <call-site-info caller="SecurityAnnotationsDemoProject.WEB_002dINF.pages.PersonForm_jsp._jspService(javax.servlet.http.HttpServletRequest;javax.servlet.http.HttpServletResponse):void" call-sig="org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(java.lang.String;java.lang.Class;javax.servlet.jsp.PageContext;org.apache.jasper.runtime.ProtectedFunctionMapper;boolean):java.lang.Object" bytecodeIndex="344" srcLineNum="111"/>
+      <replacement>
+        <assignment>
+          <l-value>
+            <arg-to-orig-call pos="-1"/>
+          </l-value>
+          <r-value>
+            <object-ref ap="">
+              <non-det>
+                <global id="request.person"/>
+                <global id="session.person"/>
+              </non-det>
+            </object-ref>
+          </r-value>
+        </assignment>
+      </replacement>
+    </replace-call>
+    <replace-call>
+      <call-site-info caller="SecurityAnnotationsDemoProject.WEB_002dINF.pages.PersonForm_jsp._jspService(javax.servlet.http.HttpServletRequest;javax.servlet.http.HttpServletResponse):void" call-sig="org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(java.lang.String;java.lang.Class;javax.servlet.jsp.PageContext;org.apache.jasper.runtime.ProtectedFunctionMapper;boolean):java.lang.Object" bytecodeIndex="370" srcLineNum="113"/>
+      <replacement>
+        <assignment>
+          <l-value>
+            <arg-to-orig-call pos="-1"/>
+          </l-value>
+          <r-value>
+            <call signature="com.ibm.appscan.annotations.model.Person.getPersonalId():java.lang.String">
+              <actual-parameter pos="0">
+                <object-ref ap="">
+                  <non-det>
+                    <global id="request.person"/>
+                    <global id="session.person"/>
+                  </non-det>
+                </object-ref>
+              </actual-parameter>
+            </call>
+          </r-value>
+        </assignment>
+      </replacement>
+    </replace-call>
+    <replace-call>
+      <call-site-info caller="SecurityAnnotationsDemoProject.WEB_002dINF.pages.PersonForm_jsp._jspService(javax.servlet.http.HttpServletRequest;javax.servlet.http.HttpServletResponse):void" call-sig="org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(java.lang.String;java.lang.Class;javax.servlet.jsp.PageContext;org.apache.jasper.runtime.ProtectedFunctionMapper;boolean):java.lang.Object" bytecodeIndex="396" srcLineNum="115"/>
+      <replacement>
+        <assignment>
+          <l-value>
+            <arg-to-orig-call pos="-1"/>
+          </l-value>
+          <r-value>
+            <call signature="com.ibm.appscan.annotations.model.Person.getGroupId():int">
+              <actual-parameter pos="0">
+                <object-ref ap="">
+                  <non-det>
+                    <global id="request.person"/>
+                    <global id="session.person"/>
+                  </non-det>
+                </object-ref>
+              </actual-parameter>
+            </call>
+          </r-value>
+        </assignment>
+      </replacement>
+    </replace-call>
+  </call-replacements>
+</wafl>

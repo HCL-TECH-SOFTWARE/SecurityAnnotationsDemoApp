@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameworkInput type="Java" xmlns="http://www.ibm.com/FrameworkInput">
+	<WaflFile>C:\Workspaces\MyTests\SecurityAnnotationsDemoApp\SecurityAnnotationsDemoProject_frameworksCLI.wafl</WaflFile>
+	<LogConfig>C:\Workspaces\MyTests\SecurityAnnotationsDemoApp\SecurityAnnotationsDemoProject_frameworksCLI_waflLogConfig.xml</LogConfig>
+	<HandlerJarDir>C:\Workspaces\904\build\debug\engine\waflgens</HandlerJarDir>
+	<ProjectFile>C:\Workspaces\MyTests\SecurityAnnotationsDemoApp\SecurityAnnotationsDemoProject.ppf</ProjectFile>
+	<JavaInfo>
+		<WebContentRoot>C:\Workspaces\MyTests\SecurityAnnotationsDemoApp\SecurityAnnotationsDemoProject_staging</WebContentRoot>
+		<WalaScopeFile>C:\Workspaces\MyTests\SecurityAnnotationsDemoApp\SecurityAnnotationsDemoProject_staging\SecurityAnnotationsDemoProject.scope</WalaScopeFile>
+		<Options>
+			<Property name="javaee.core.jsp.precompiler" value="tomcat"></Property>
+			<Property name="javaee.core.jsp.precompiler.version" value="70"></Property>
+			<Property name="javaee.core.jsp.package" value="SecurityAnnotationsDemoProject"></Property>
+			<Property name="javaee.core.replaceSetGetAttributeCalls" value="false"></Property>
+		</Options>
+	</JavaInfo>
+</FrameworkInput>
