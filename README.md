@@ -5,11 +5,11 @@ annotations. Developers can identify interesting validators, sanitizers and call
 and insert these annotations directly into the source code before a scan is done;
 or they can be added after a scan during remediation to achieve the desired effect.
 
-# Prerequisites:
+# Prerequisites
 
 - A local installation of IBM Security AppScan Source.
 
-# Dependencies:
+# Dependencies
 
 This demo app depends on the following packages: 
 
