@@ -1,6 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'war'
 
+
 repositories {
 	mavenCentral()
 }
@@ -14,4 +15,8 @@ dependencies {
 		'org.springframework:spring-web:3.1.0.RELEASE',
 		'commons-lang:commons-lang:2.1',
 		'org.apache.derby:derby:10.8.2.2'
+}
+
+dependencies {
+    compile files("$System.env.SECANNOTATIONS",'lib/MyLibrary.jar')
 }

@@ -7,7 +7,17 @@ or they can be added after a scan during remediation to achieve the desired effe
 
 # Prerequisites
 
-- A local installation of IBM Security AppScan Source.
+- A local installation of IBM Security AppScan Source. (Version 9.0.3)
+- The lastest version of Gradle installed (Gradle 2.13)
+- You will need to set up a system variable known as "SECANNOTATIONS" in order to
+run the gradle build script properly. 
+
+In order to do this in windows go to the system page in your control panel (press windows key and pause). Next go to Advanced settings. A system Properties window will appear, go to the "Advanced" tab and click on "Environment Variables" in the bottom right corner. An Environment Variables window will appear, click "New" in the "System Variables" section. A final window will appear, input "SECANNOTATIONS" as your "variable name" and the location of your SecurityAnnotations.jar 
+(Example: C:\Program Files (x86)\IBM\AppScanSource\lib\SecurityAnnotations.jar).
+After this the gradle build script should run with no errors.
+
+In order to do this with a UNIX system you need to open up your terminal and create a shell variable. This can be done by writing "SECANNOTATIONS=" followed by the file path to the location of SecurityAnnotations.jar 
+(Example: /var/opt/ibm/appscansource/lib/SecurityAnnotations.jar). After this is done simply type "export SECANNOTATIONS" into the same terminal session. After this your gradle build script should run with no issues. 
 
 # Dependencies
 
