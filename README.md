@@ -12,9 +12,9 @@ or they can be added after a scan during remediation to achieve the desired effe
 - You will need to set up a system variable known as "SECANNOTATIONS" in order to
 run the gradle build script properly. 
 
-In order to do this with a windows system you need to create an environmental variable within the command prompt. Simply type 'setx SECANNOTATIONS "SecurityAnnotations.jar location"'. After this your gradle build script should run with no issues.
+In order to do this with a windows system you need to create an environmental variable within the command prompt. Simply type 'setx SECANNOTATIONS "AppScan Source install location"'. After this your gradle build script should run with no issues.
 
-In order to do this with a UNIX system you need to create an environmental variable within the terminal. Simply type "SECANNOTATIONS=" followed by the file path to the location of SecurityAnnotations.jar. After this is input type "export SECANNOTATIONS". After this your gradle build script should run with no issues. 
+In order to do this with a UNIX system you need to create an environmental variable within the terminal. Simply type "SECANNOTATIONS=" followed by the file path to the install location of Appscan Source. After this is input type "export SECANNOTATIONS". After this your gradle build script should run with no issues. 
 
 # Dependencies
 
