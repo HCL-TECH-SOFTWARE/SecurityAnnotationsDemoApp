@@ -1,4 +1,4 @@
-# IBM Security AppScan Annotations Demo App
+# HCL AppScan Annotations Demo App
 
 In AppScan Source and Static Analyzer we provide support with method-level
 annotations. Developers can identify interesting validators, sanitizers and callback methods during code development
@@ -7,7 +7,7 @@ or they can be added after a scan during remediation to achieve the desired effe
 
 # Prerequisites
 
-- A local installation of IBM Security AppScan Source. (Version 9.0.3)
+- A local installation of AppScan Source. (Version 9.0.3)
 - The lastest version of Gradle installed (Gradle 2.13)
 - You will need to set up a system variable known as "SECANNOTATIONS" in order to
 run the gradle build script properly. 
